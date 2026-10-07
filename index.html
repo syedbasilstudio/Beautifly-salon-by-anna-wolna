@@ -135,9 +135,10 @@ tailwind.config = {
     <div class="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/55 to-transparent"></div>
     <div class="absolute inset-0 bg-gradient-to-t from-ivory/70 via-transparent to-ivory/20"></div>
   </div>
-  <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="top:22%;left:6%;animation-delay:1.4s">Massage</span>
+  <!-- Floating labels moved to the open right-hand side so they don't collide with the headline -->
+  <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="top:22%;left:46%;animation-delay:1.4s">Massage</span>
   <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="top:30%;right:8%;animation-delay:1.58s">Skin</span>
-  <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="bottom:26%;left:10%;animation-delay:1.76s">Beauty</span>
+  <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="bottom:26%;left:44%;animation-delay:1.76s">Beauty</span>
   <span class="hidden md:block absolute font-body text-[10px] tracking-[0.34em] uppercase text-espresso/55 fade-up" style="bottom:20%;right:6%;animation-delay:1.94s">Aesthetics</span>
   <div class="hidden md:flex absolute right-[7%] top-1/2 -translate-y-1/2 flex-col items-center justify-center w-28 h-28 rounded-full border border-espresso/25 text-center fade-up" style="animation-delay:1.7s">
     <span class="font-body text-[10px] tracking-[0.3em] text-stone">01</span>
@@ -145,10 +146,11 @@ tailwind.config = {
   </div>
   <div class="relative z-10 mx-auto max-w-[1400px] px-5 sm:px-8 min-h-[100svh] flex flex-col justify-center pt-28 pb-32">
     <span class="font-body text-[11px] sm:text-[12px] tracking-[0.34em] uppercase text-stone mb-7 fade-up" style="animation-delay:.5s">Beautifly Salon · Blairgowrie</span>
-    <h1 class="font-display text-espresso leading-[0.92] tracking-[-0.02em] max-w-[16ch]">
-      <span class="block overflow-hidden"><span class="block hero-line" style="font-size:clamp(2.4rem,7vw,6rem);animation-delay:.7s">Beauty, Wellness</span></span>
-      <span class="block overflow-hidden"><span class="block hero-line" style="font-size:clamp(3rem,9vw,7.5rem);animation-delay:.88s">&amp; the Art of</span></span>
-      <span class="block overflow-hidden"><span class="block hero-line" style="font-size:clamp(2.4rem,7vw,6rem);animation-delay:1.06s">Feeling Your Best.</span></span>
+    <!-- FIX: max-w-[16ch] replaced with max-w-4xl; pb added so overflow-hidden doesn't clip descenders -->
+    <h1 class="font-display text-espresso leading-[0.92] tracking-[-0.02em] max-w-4xl">
+      <span class="block overflow-hidden pb-[0.1em]"><span class="block hero-line" style="font-size:clamp(2.4rem,7vw,6rem);animation-delay:.7s">Beauty, Wellness</span></span>
+      <span class="block overflow-hidden pb-[0.1em]"><span class="block hero-line" style="font-size:clamp(3rem,9vw,7.5rem);animation-delay:.88s">&amp; the Art of</span></span>
+      <span class="block overflow-hidden pb-[0.1em]"><span class="block hero-line" style="font-size:clamp(2.4rem,7vw,6rem);animation-delay:1.06s">Feeling Your Best.</span></span>
     </h1>
     <p class="mt-8 max-w-xl font-body text-base sm:text-lg leading-relaxed text-espresso/75 text-pretty fade-up" style="animation-delay:1.25s">A refined beauty and wellness experience where advanced skin treatments, therapeutic massage and personalised care come together in one beautiful space.</p>
     <div class="mt-10 flex flex-col sm:flex-row gap-4 fade-up" style="animation-delay:1.5s">
